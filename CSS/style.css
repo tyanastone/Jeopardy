@@ -1,3 +1,36 @@
+.header-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    border: solid;
+    height: 200px;
+    width: 1600px;
+    grid-template-areas: "scoreKeeper scoreKeeper scoreKeeper scoreKeeper" ". . . ." ". . . .";
+  }
+  
+  .scoreKeeper {
+    display: grid;
+    grid-area: scoreKeeper;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+    border: solid;
+    height: 100px;
+    width: 1600px;
+    grid-template-areas: "gameTitle gameTitle" "scoreContainer scoreContainer";
+  }
+  
+  .gameTitle { grid-area: gameTitle; 
+            border: solid;
+            height: 100px;
+            width: 200px;
+}
+  
+  .scoreContainer { grid-area: scoreContainer; 
+    
+}
 .grid-container {
     display: grid;
     height: 100%;
