@@ -12,7 +12,7 @@
 <!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.12/css/mdb.min.css" rel="stylesheet">
+
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
@@ -20,9 +20,9 @@
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.12/js/mdb.min.js"></script>
+
    
-    <script  src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     <!-- created container for header -->
@@ -74,8 +74,8 @@
             <div class="modal-body">
                 <!-- form that is inside modal with radio buttons -->
                     <form>
-                            <input type="radio" name="male" id="male" value="male" data-dismiss="modal"> Male<br>
-                            <input type="radio" name="female" id="female" value="female" data-dismiss="modal"> Female<br>
+                            <input type="radio" name="male" id="male" value="male" onclick="checkAll()" data-dismiss="modal"> Male<br>
+                            <input type="radio" name="female" id="female" value="female" onclick="checkAll()" data-dismiss="modal"> Female<br>
                     </form> 
             </div>
             <!-- <div class="modal-footer">

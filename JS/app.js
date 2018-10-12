@@ -21,13 +21,31 @@ function checkAll() {
 
     function questioncheckOne() {
         var correctAnswer = document.getElementById("female")
+        var wrongAnswer = document.getElementById("male")
         if (correctAnswer.checked == true) {
-            score++;
-            alert("Correct, your score is now " + score)
+            score+=100;
+            document.getElementById("score").innerHTML = "Score: " + score 
+            // alert("Correct, your score is now " + score)
         }
-        else {
-            alert("Wrong, your score is now " + score)
+        else if (wrongAnswer.checked == true) {
+            score-=100;
+            document.getElementById("score").innerHTML = "Score: " + score 
         }
+        questioncheckOne()
     };
-questioncheckOne()
+    function questioncheckTwo() {
+        var correctAnswer = document.getElementById("female")
+        var wrongAnswer = document.getElementById("male")
+        if (correctAnswer.checked == true) {
+            score+=100;
+            document.getElementById("score").innerHTML = "Score: " + score 
+            // alert("Correct, your score is now " + score)
+        }
+        else if (wrongAnswer.checked == true) {
+            score-=100;
+            document.getElementById("score").innerHTML = "Score: " + score 
+        }
+        questioncheckTwo()
+    };
 }
+
