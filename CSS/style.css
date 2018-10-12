@@ -29,7 +29,8 @@
 }
   
   .scoreContainer { grid-area: scoreContainer; 
-    
+    height: 100px;
+    width: 1600px;
 }
 .grid-container {
     display: grid;
