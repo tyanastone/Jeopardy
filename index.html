@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,40 @@
     <!-- linked css -->
     <link rel="stylesheet" href="CSS/style.css">
     <!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
 
-   
+
     <script src="js/app.js"></script>
 </head>
+
 <body>
     <!-- created container for header -->
-        <div class="header-container">
-            <!-- added score -->
-            <h3 id="score">Score: 0</h3>
-              <!-- container for score -->
-                <div class="scoreKeeper">
-                 <!-- container for title -->
-                  <div class="area-overlap-gameTitle">
-                      Jeopardy
-                  </div>
-                  <!-- container in header -->
-                  <div class="scoreContainer">  
-                  </div>
-                </div>
-              </div>
-              <!-- input grid template from layoutit.com/grid -->
+    <div class="header-container">
+        <!-- added score -->
+        <h3 id="score">Score: 0</h3>
+        <!-- container for score -->
+        <div class="scoreKeeper">
+            <!-- container for title -->
+            <div class="area-overlap-gameTitle">
+                Jeopardy
+            </div>
+            <!-- container in header -->
+            <div class="scoreContainer">
+            </div>
+        </div>
+    </div>
+    <!-- input grid template from layoutit.com/grid -->
     <div class="grid-container">
         <div class="categoryOne">
             Lorem ipsum dolor sit amet.
@@ -54,40 +56,81 @@
         <div class="categoryFour">
             Lorem ipsum dolor sit amet.
         </div>
+
         <div class="q1C1">
             Lorem, ipsum dolor.
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
-        Launch question
-      </button>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">What is your gender?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+                Launch question
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">What is your gender?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form that is inside modal with radio buttons -->
+                            <form>
+                                <input type="radio" name="male" id="male" value="male" onclick="questionCheckOne()"
+                                    data-dismiss="modal"> Male<br>
+                                <input type="radio" name="female" id="female" value="female" onclick="questionCheckOne()"
+                                    data-dismiss="modal"> Female<br>
+                            </form>
+                        </div>
+                        <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <input type="submit" class="btn btn-primary" value="Submit">
+                </div> -->
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <!-- form that is inside modal with radio buttons -->
-                    <form>
-                            <input type="radio" name="male" id="male" value="male" onclick="checkAll()" data-dismiss="modal"> Male<br>
-                            <input type="radio" name="female" id="female" value="female" onclick="checkAll()" data-dismiss="modal"> Female<br>
-                    </form> 
-            </div>
-            <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <input type="submit" class="btn btn-primary" value="Submit">
-            </div> -->
-          </div>
         </div>
-      </div>
-        </div>
+
+        <!-- HOW TO DIFFERENTIATE QUESTIONS IN MODALS:
+                IN YOUR BUTTON THAT LAUNCHES THE MODAL
+                MAKE SURE THE DATA-TARGET MATCHES THE 
+                ID OF THE MODAL ITSELF
+                data-target="#basicExampleModal-1"
+                id="basicExampleModal-1"
+            -->
+
         <div class="q2C1">
             Lorem, ipsum dolor.
+            <button onClick="questionCheckTwo()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-1">
+                Launch question
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">What is your name?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form that is inside modal with radio buttons -->
+                            <form>
+                                <input type="radio" name="her" id="tyana" value="tyana" onclick="questionCheckTwo()"
+                                    data-dismiss="modal"> Tyana<br>
+                                <input type="radio" name="him" id="aiden" value="aiden" onclick="questionCheckTwo()"
+                                    data-dismiss="modal"> Aiden<br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="q1C2">
             Lorem, ipsum dolor.
@@ -119,14 +162,15 @@
         <div class="q3C4">
             Lorem, ipsum dolor.
         </div>
-      </div>
-      
-      
-      
-      
-      
-    
+    </div>
+
+
+
+
+
+
 
     <script defer src="js/app.js"></script>
 </body>
+
 </html>

@@ -17,11 +17,27 @@
 
 var score=0;
 
-function checkAll() {
 
-    function questioncheckOne() {
+
+    function questionCheckOne() {
         var correctAnswer = document.getElementById("female")
         var wrongAnswer = document.getElementById("male")
+        if (correctAnswer.checked == true) {
+            score += 100;
+            console.log(score)
+            document.getElementById("score").innerHTML = "Score: " + score 
+            // alert("Correct, your score is now " + score)
+        }
+        else if (wrongAnswer.checked == true) {
+            score-=100;
+            document.getElementById("score").innerHTML = "Score: " + score 
+        }
+    };
+
+function questionCheckTwo() {
+        console.log('clicked')
+        var correctAnswer = document.getElementById("tyana")
+        var wrongAnswer = document.getElementById("aiden")
         if (correctAnswer.checked == true) {
             score+=100;
             document.getElementById("score").innerHTML = "Score: " + score 
@@ -31,21 +47,5 @@ function checkAll() {
             score-=100;
             document.getElementById("score").innerHTML = "Score: " + score 
         }
-        questioncheckOne()
-    };
-    function questioncheckTwo() {
-        var correctAnswer = document.getElementById("female")
-        var wrongAnswer = document.getElementById("male")
-        if (correctAnswer.checked == true) {
-            score+=100;
-            document.getElementById("score").innerHTML = "Score: " + score 
-            // alert("Correct, your score is now " + score)
-        }
-        else if (wrongAnswer.checked == true) {
-            score-=100;
-            document.getElementById("score").innerHTML = "Score: " + score 
-        }
-        questioncheckTwo()
-    };
-}
+    }
 
