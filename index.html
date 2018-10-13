@@ -54,7 +54,7 @@
             Movies
         </div>
         <div class="categoryThree">
-            Lorem ipsum dolor sit amet.
+            Music
         </div>
         <div class="categoryFour">
             Lorem ipsum dolor sit amet.
@@ -224,7 +224,33 @@
             </div>
         </div>
         <div class="q2C3">
-            Lorem, ipsum dolor.
+            <button onClick="questionCheckEight()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-8">
+                $200
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">This musician is often referred to as the fifth Beatle. </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form that is inside modal with radio buttons -->
+                            <form>
+                                <input type="radio" name="pete" id="pete" value="pete" onclick="questionCheckEight()"
+                                    data-dismiss="modal">Pete Best<br>
+                                <input type="radio" name="jake" id="jake" value="jake" onclick="questionCheckEight()"
+                                    data-dismiss="modal">Jake Gyllenhaal<br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="q1C4">
             Lorem, ipsum dolor.
