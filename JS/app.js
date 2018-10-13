@@ -1,20 +1,4 @@
-// var first= querySelector()
-// var score = 0
-// $('input[type=radio]').click(function () {
-   
-//     points += 10    
-//     .innerHTML =  
-// });
 
-// var score = document.querySelector("#score")
-// var changeScore = 0
-
-// function answer(a, b) {
-// if ()
-
-
-// }
-// declared variable for score to equal zero 
 var score=0;
 
 
@@ -32,9 +16,9 @@ function questionCheckOne() {
         score -= 100;
         document.getElementById("score").innerHTML = "Score: " + score
         document.getElementById("score").style.color = "#ff0000";
-        // $('.modal-dialog').addClass('animated shake');
         
     }
+    $('.modal-dialog').addClass('animated shake');
 }
     function questionCheckTwo() {
         var correctAnswer = document.getElementById("tyana")
@@ -49,6 +33,7 @@ function questionCheckOne() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000"
         }
+        $('.modal-dialog-1').addClass('animated tada');
     }
     
     function questionCheckThree() {
@@ -64,6 +49,7 @@ function questionCheckOne() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000"
         }
+        $('.modal-dialog-2').addClass('animated jello');
     }
 function questionCheckFour() {
    
@@ -81,7 +67,7 @@ function questionCheckFour() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000";   
         }
-        $('.modal-dialog').addClass('animated rubberBand');
+        $('.modal-dialog-3').addClass('animated rubberBand');
 }
 
 function questionCheckFive() {
@@ -90,15 +76,15 @@ function questionCheckFive() {
 var wrongAnswer = document.getElementById("bank")
 
     if (correctAnswer.checked == true) {
-        score += 100;
+        score += 200;
         document.getElementById("score").innerHTML = "Score: " + score
         document.getElementById("score").style.color = "#008000";
           
     }
     else if (wrongAnswer.checked == true) {
-        score -= 100;
+        score -= 200;
         document.getElementById("score").innerHTML = "Score: " + score
         document.getElementById("score").style.color = "#ff0000";   
     }
-    $('.modal-dialog').addClass('animated rubberBand');
+    $('.modal-dialog-4').addClass('animated wobble');
 }
