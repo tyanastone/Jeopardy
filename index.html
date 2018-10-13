@@ -137,12 +137,12 @@
 
         </div>
         <div class="q1C2">
-            <button onClick="questionCheckTwo()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-1">
-                $1     00
+            <button onClick="questionCheckTwo()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-2">
+                $100
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="basicExampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="basicExampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -166,7 +166,33 @@
             </div>
         </div>
         <div class="q2C2">
-            Lorem, ipsum dolor.
+            <button onClick="questionCheckTwo()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-3">
+                $200
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Which "Bridesmaid," who was upstaged in the film by Rose Byrne, was herself a serial "one-upper" on SNL? </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form that is inside modal with radio buttons -->
+                            <form>
+                                <input type="radio" name="wiig" id="wiig" value="wiig" onclick="questionCheckFive()"
+                                    data-dismiss="modal">Kristen Wiig<br>
+                                <input type="radio" name="bank" id="bank" value="bank" onclick="questionCheckFive()"
+                                    data-dismiss="modal"> Elizabeth Banks<br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="q1C3">
            

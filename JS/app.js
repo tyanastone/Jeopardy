@@ -65,4 +65,21 @@ function questionCheckOne() {
             document.getElementById("score").style.color = "#ff0000"
         }
     }
-
+function questionCheckFour() {
+   
+        var correctAnswer = document.getElementById("harrison")
+    var wrongAnswer = document.getElementById("helen")
+    
+        if (correctAnswer.checked == true) {
+            score += 100;
+            document.getElementById("score").innerHTML = "Score: " + score
+            document.getElementById("score").style.color = "#008000";
+              
+        }
+        else if (wrongAnswer.checked == true) {
+            score -= 100;
+            document.getElementById("score").innerHTML = "Score: " + score
+            document.getElementById("score").style.color = "#ff0000";   
+        }
+        $('.modal-dialog').addClass('animated rubberBand');
+    }
