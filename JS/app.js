@@ -49,7 +49,7 @@ function questionCheckOne() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000"
         }
-        $('.modal-dialog-2').addClass('animated jello');
+        $('.modal-dialog').addClass('animated jello');
     }
 function questionCheckFour() {
    
@@ -67,7 +67,7 @@ function questionCheckFour() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000";   
         }
-        $('.modal-dialog-3').addClass('animated rubberBand');
+        $('.modal-dialog').addClass('animated rubberBand');
 }
 
 function questionCheckFive() {
@@ -86,5 +86,24 @@ var wrongAnswer = document.getElementById("bank")
         document.getElementById("score").innerHTML = "Score: " + score
         document.getElementById("score").style.color = "#ff0000";   
     }
-    $('.modal-dialog-4').addClass('animated wobble');
+    $('.modal-dialog').addClass('animated wobble');
+}
+
+function questionCheckSix() {
+   
+    var correctAnswer = document.getElementById("katy")
+var wrongAnswer = document.getElementById("kris")
+
+    if (correctAnswer.checked == true) {
+        score += 300;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#008000";
+          
+    }
+    else if (wrongAnswer.checked == true) {
+        score -= 300;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#ff0000";   
+    }
+    $('.modal-dialog').addClass('animated pulse');
 }
