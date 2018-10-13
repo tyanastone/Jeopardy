@@ -82,4 +82,23 @@ function questionCheckFour() {
             document.getElementById("score").style.color = "#ff0000";   
         }
         $('.modal-dialog').addClass('animated rubberBand');
+}
+
+function questionCheckFive() {
+   
+    var correctAnswer = document.getElementById("wiig")
+var wrongAnswer = document.getElementById("bank")
+
+    if (correctAnswer.checked == true) {
+        score += 100;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#008000";
+          
     }
+    else if (wrongAnswer.checked == true) {
+        score -= 100;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#ff0000";   
+    }
+    $('.modal-dialog').addClass('animated rubberBand');
+}
