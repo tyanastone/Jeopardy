@@ -137,6 +137,8 @@ weight: 200px;
 }
 
 .btn{
-  height: 195px;
-  width: 400px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  
 }
