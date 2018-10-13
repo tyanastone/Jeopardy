@@ -317,7 +317,33 @@
             </div>
         </div>
         <div class="q3C3">
-            Lorem, ipsum dolor.
+            <button onClick="questionCheckNine()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-9">
+                $300
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">How many keys are on most baby grand pianos?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form that is inside modal with radio buttons -->
+                            <form>
+                                <input type="radio" name="eight" id="eight" value="eight" onclick="questionCheckSix()"
+                                    data-dismiss="modal">88<br>
+                                <input type="radio" name="six" id="six" value="six" onclick="questionCheckSix()"
+                                    data-dismiss="modal">66<br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="q3C4">
             Lorem, ipsum dolor.
