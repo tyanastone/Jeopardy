@@ -47,5 +47,20 @@ function questionCheckTwo() {
             document.getElementById("score").innerHTML = "Score: " + score 
             document.getElementById("score").style.color = "#ff0000"
         }
+}
+    
+function questionCheckThree() {
+    var correctAnswer = document.getElementById("yes")
+    var wrongAnswer = document.getElementById("no")
+    if (correctAnswer.checked == true) {
+        score+=300;
+        document.getElementById("score").innerHTML = "Score: " + score 
+        document.getElementById("score").style.color = "#008000"
     }
+    else if (wrongAnswer.checked == true) {
+        score-=300;
+        document.getElementById("score").innerHTML = "Score: " + score 
+        document.getElementById("score").style.color = "#ff0000"
+    }
+}
 
