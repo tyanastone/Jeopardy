@@ -38,30 +38,43 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1px;
+   
    }
   
   .categoryOne { grid-area: 1 / 1 / 2 / 2; 
 border: solid;
 height: 200px;
 weight: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
   
   .categoryTwo { grid-area: 1 / 2 / 2 / 3; 
 border: solid;
 height: 200px;
 weight: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
   
   .categoryThree { grid-area: 1 / 3 / 2 / 4; 
 border: solid;
 height: 200px;
 weight: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
   
   .categoryFour { grid-area: 1 / 4 / 2 / 5; 
 border: solid;
 height: 200px;
 weight: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
   
   .q1C1 { grid-area: 2 / 1 / 3 / 2; 
