@@ -126,3 +126,22 @@ var wrongAnswer = document.getElementById("les")
     }
     $('.modal-dialog').addClass('animated rubberBand');
 }
+
+function questionCheckEight() {
+   
+    var correctAnswer = document.getElementById("pete")
+var wrongAnswer = document.getElementById("jake")
+
+    if (correctAnswer.checked == true) {
+        score += 200;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#008000";
+          
+    }
+    else if (wrongAnswer.checked == true) {
+        score -= 200;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#ff0000";   
+    }
+    $('.modal-dialog').addClass('animated rubberBand');
+}
