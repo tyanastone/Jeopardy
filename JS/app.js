@@ -18,7 +18,7 @@ function questionCheckOne() {
         document.getElementById("score").style.color = "#ff0000";
         
     }
-    $('.modal-dialog').addClass('animated shake');
+    $('.modal-dialog').addClass('animated rubberBand');
 }
     function questionCheckTwo() {
         var correctAnswer = document.getElementById("tyana")
@@ -33,7 +33,7 @@ function questionCheckOne() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000"
         }
-        $('.modal-dialog-1').addClass('animated tada');
+        $('.modal-dialog-1').addClass('animated rubberBand');
     }
     
     function questionCheckThree() {
@@ -49,7 +49,7 @@ function questionCheckOne() {
             document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000"
         }
-        $('.modal-dialog').addClass('animated jello');
+        $('.modal-dialog').addClass('animated rubberBand');
     }
 function questionCheckFour() {
    
@@ -86,7 +86,7 @@ var wrongAnswer = document.getElementById("bank")
         document.getElementById("score").innerHTML = "Score: " + score
         document.getElementById("score").style.color = "#ff0000";   
     }
-    $('.modal-dialog').addClass('animated wobble');
+    $('.modal-dialog').addClass('animated rubberBand');
 }
 
 function questionCheckSix() {
@@ -105,5 +105,5 @@ var wrongAnswer = document.getElementById("kris")
         document.getElementById("score").innerHTML = "Score: " + score
         document.getElementById("score").style.color = "#ff0000";   
     }
-    $('.modal-dialog').addClass('animated pulse');
+    $('.modal-dialog').addClass('animated rubberBand');
 }
