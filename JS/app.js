@@ -19,48 +19,50 @@ var score=0;
 
 
 
-    function questionCheckOne() {
-        var correctAnswer = document.getElementById("female")
-        var wrongAnswer = document.getElementById("male")
-        if (correctAnswer.checked == true) {
-            score += 100;
-            document.getElementById("score").innerHTML = "Score: " + score 
-            document.getElementById("score").style.color = "#008000";
-        }
-        else if (wrongAnswer.checked == true) {
-            score-=100;
-            document.getElementById("score").innerHTML = "Score: " + score 
-            document.getElementById("score").style.color = "#ff0000";
-        }
+function questionCheckOne() {
+    var correctAnswer = document.getElementById("female")
+    var wrongAnswer = document.getElementById("male")
+    if (correctAnswer.checked == true) {
+        score += 100;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#008000";
+            
     }
-
-function questionCheckTwo() {
+    else if (wrongAnswer.checked == true) {
+        score -= 100;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#ff0000";
+        // $('.modal-dialog').addClass('animated shake');
+        
+    }
+}
+    function questionCheckTwo() {
         var correctAnswer = document.getElementById("tyana")
         var wrongAnswer = document.getElementById("aiden")
         if (correctAnswer.checked == true) {
-            score+=200;
-            document.getElementById("score").innerHTML = "Score: " + score 
+            score += 200;
+            document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#008000"
         }
         else if (wrongAnswer.checked == true) {
-            score-=200;
-            document.getElementById("score").innerHTML = "Score: " + score 
+            score -= 200;
+            document.getElementById("score").innerHTML = "Score: " + score
             document.getElementById("score").style.color = "#ff0000"
         }
-}
+    }
     
-function questionCheckThree() {
-    var correctAnswer = document.getElementById("yes")
-    var wrongAnswer = document.getElementById("no")
-    if (correctAnswer.checked == true) {
-        score+=300;
-        document.getElementById("score").innerHTML = "Score: " + score 
-        document.getElementById("score").style.color = "#008000"
+    function questionCheckThree() {
+        var correctAnswer = document.getElementById("yes")
+        var wrongAnswer = document.getElementById("no")
+        if (correctAnswer.checked == true) {
+            score += 300;
+            document.getElementById("score").innerHTML = "Score: " + score
+            document.getElementById("score").style.color = "#008000"
+        }
+        else if (wrongAnswer.checked == true) {
+            score -= 300;
+            document.getElementById("score").innerHTML = "Score: " + score
+            document.getElementById("score").style.color = "#ff0000"
+        }
     }
-    else if (wrongAnswer.checked == true) {
-        score-=300;
-        document.getElementById("score").innerHTML = "Score: " + score 
-        document.getElementById("score").style.color = "#ff0000"
-    }
-}
 

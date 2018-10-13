@@ -137,7 +137,33 @@
 
         </div>
         <div class="q1C2">
-            Lorem, ipsum dolor.
+            <button onClick="questionCheckTwo()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal-1">
+                $1     00
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">When did the Liberty Bell get its name?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form that is inside modal with radio buttons -->
+                            <form>
+                                <input type="radio" name="her" id="tyana" value="tyana" onclick="questionCheckTwo()"
+                                    data-dismiss="modal">In the 19th century, when it became a symbol of the abolition of slavery<br>
+                                <input type="radio" name="him" id="aiden" value="aiden" onclick="questionCheckTwo()"
+                                    data-dismiss="modal"> When it was made, in 1701<br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="q2C2">
             Lorem, ipsum dolor.
