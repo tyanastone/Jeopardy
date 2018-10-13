@@ -145,3 +145,22 @@ var wrongAnswer = document.getElementById("jake")
     }
     $('.modal-dialog').addClass('animated rubberBand');
 }
+
+function questionCheckNine() {
+   
+    var correctAnswer = document.getElementById("eight")
+var wrongAnswer = document.getElementById("six")
+
+    if (correctAnswer.checked == true) {
+        score += 300;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#008000";
+          
+    }
+    else if (wrongAnswer.checked == true) {
+        score -= 300;
+        document.getElementById("score").innerHTML = "Score: " + score
+        document.getElementById("score").style.color = "#ff0000";   
+    }
+    $('.modal-dialog').addClass('animated rubberBand');
+}
