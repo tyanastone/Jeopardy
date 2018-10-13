@@ -14,7 +14,7 @@
 
 
 // }
-
+// declared variable for score to equal zero 
 var score=0;
 
 
@@ -24,18 +24,17 @@ var score=0;
         var wrongAnswer = document.getElementById("male")
         if (correctAnswer.checked == true) {
             score += 100;
-            console.log(score)
             document.getElementById("score").innerHTML = "Score: " + score 
-            // alert("Correct, your score is now " + score)
+            document.getElementById("score").style.color = "#008000";
         }
         else if (wrongAnswer.checked == true) {
             score-=100;
             document.getElementById("score").innerHTML = "Score: " + score 
+            document.getElementById("score").style.color = "#ff0000";
         }
     };
 
 function questionCheckTwo() {
-        console.log('clicked')
         var correctAnswer = document.getElementById("tyana")
         var wrongAnswer = document.getElementById("aiden")
         if (correctAnswer.checked == true) {
