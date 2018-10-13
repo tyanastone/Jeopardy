@@ -32,19 +32,20 @@ var score=0;
             document.getElementById("score").innerHTML = "Score: " + score 
             document.getElementById("score").style.color = "#ff0000";
         }
-    };
+    }
 
 function questionCheckTwo() {
         var correctAnswer = document.getElementById("tyana")
         var wrongAnswer = document.getElementById("aiden")
         if (correctAnswer.checked == true) {
-            score+=100;
+            score+=200;
             document.getElementById("score").innerHTML = "Score: " + score 
-            // alert("Correct, your score is now " + score)
+            document.getElementById("score").style.color = "#008000"
         }
         else if (wrongAnswer.checked == true) {
-            score-=100;
+            score-=200;
             document.getElementById("score").innerHTML = "Score: " + score 
+            document.getElementById("score").style.color = "#ff0000"
         }
     }
 
