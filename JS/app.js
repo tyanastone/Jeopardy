@@ -1,6 +1,26 @@
-
-var score=0;
-
+// declared score variable equal to zero
+var score = 0;
+// created function for question One
+function questionCheckOne() {
+    // created variable for correct answer
+    var correctAnswer = document.getElementById("female")
+    // created variable for wrong answer
+    var wrongAnswer = document.getElementById("male")
+    // if the correct answer was checked then update score
+    if (correctAnswer.checked == true) {
+        // add 100 points to score
+        score += 100;
+        // grab score ID and change .innerHTML to say Score: + (whatever the score is)
+        document.getElementById("score").innerHTML = "Score: " + score        
+    }
+    // otherwise if the wrong answer is checked
+    else if (wrongAnswer.checked == true) {
+        // subtract 100 points from score
+        score -= 100;
+        // grab score ID and change .innerHTML to say Score: + (whatever the score is)
+        document.getElementById("score").innerHTML = "Score: " + score    
+    }
+}
 
 
 function questionCheckOne() {
@@ -19,6 +39,7 @@ function questionCheckOne() {
         
     }
     $('.modal-dialog').addClass('animated rubberBand');
+    
 }
     function questionCheckTwo() {
         var correctAnswer = document.getElementById("tyana")
@@ -221,3 +242,9 @@ var wrongAnswer = document.getElementById("clyde")
     }
     $('.modal-dialog').addClass('animated rubberBand');
 }
+
+
+
+$('#box').click(function() {
+
+})
