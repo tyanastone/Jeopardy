@@ -4,12 +4,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1px;
-    border: solid;
+    /* border: solid; */
     height: 200px;
     width: 1600px;
     grid-template-areas: "scoreKeeper scoreKeeper scoreKeeper scoreKeeper" ". . . ." ". . . .";
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
   }
-  
+
   .scoreKeeper {
     display: grid;
     grid-area: scoreKeeper;
@@ -17,20 +20,28 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 1px;
     border: solid;
-    height: 100px;
-    width: 1600px;
+    display: block;
+    width: 100%;
     grid-template-areas: "gameTitle gameTitle" "scoreContainer scoreContainer";
+      display: flex;
+    align-content: center;
+    justify-content: center;
+    
   }
   
   .gameTitle { grid-area: gameTitle; 
             border: solid;
             height: 100px;
             width: 200px;
+            
 }
-  
+
   .scoreContainer { grid-area: scoreContainer; 
-    height: 100px;
-    width: 1600px;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 .grid-container {
     display: grid;
@@ -40,7 +51,9 @@
     grid-gap: 1px;
    
    }
-  
+  .h1{
+    font-family: 'Oraqle Script';
+  }
   .categoryOne { grid-area: 1 / 1 / 2 / 2; 
 border: solid;
 height: 200px;
