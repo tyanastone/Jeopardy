@@ -1,43 +1,33 @@
 // declared score variable equal to zero
 var score = 0;
+
 // created function for question One
 function questionCheckOne() {
     // created variable for correct answer
     var correctAnswer = document.getElementById("female")
     // created variable for wrong answer
     var wrongAnswer = document.getElementById("male")
-    // if the correct answer was checked then update score
+     // if the correct answer was checked then update score
     if (correctAnswer.checked == true) {
-        // add 100 points to score
+         // add 100 points to score
         score += 100;
         // grab score ID and change .innerHTML to say Score: + (whatever the score is)
-        document.getElementById("score").innerHTML = "Score: " + score        
+        document.getElementById("score").innerHTML = "Score: " + score
+        // change color to green when they click this radio button
+        document.getElementById("score").style.color = "#008000";
+            
     }
     // otherwise if the wrong answer is checked
     else if (wrongAnswer.checked == true) {
         // subtract 100 points from score
         score -= 100;
         // grab score ID and change .innerHTML to say Score: + (whatever the score is)
-        document.getElementById("score").innerHTML = "Score: " + score    
-    }
-}
-
-
-function questionCheckOne() {
-    var correctAnswer = document.getElementById("female")
-    var wrongAnswer = document.getElementById("male")
-    if (correctAnswer.checked == true) {
-        score += 100;
         document.getElementById("score").innerHTML = "Score: " + score
-        document.getElementById("score").style.color = "#008000";
-            
-    }
-    else if (wrongAnswer.checked == true) {
-        score -= 100;
-        document.getElementById("score").innerHTML = "Score: " + score
+        // change color to red when they click this radio button
         document.getElementById("score").style.color = "#ff0000";
         
     }
+    // animate modal box when clicked on
     $('.modal-dialog').addClass('animated rubberBand');
     
 }
@@ -245,6 +235,3 @@ var wrongAnswer = document.getElementById("clyde")
 
 
 
-$('#box').click(function() {
-
-})
