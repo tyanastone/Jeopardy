@@ -97,7 +97,7 @@ function questionCheckFour() {
 }
 
 function questionCheckFive() {
-   
+   $('#one').toggle()
     var correctAnswer = document.getElementById("wiig")
 var wrongAnswer = document.getElementById("bank")
 
