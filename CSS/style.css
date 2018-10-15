@@ -201,5 +201,29 @@ font{
   font-family: 'Pacifico', cursive;
 }
 
-
+#timedAlert .modal-dialog  { 
+  width: 470px; 
+  text-align: center;
+}
+#timedAlert1 .modal-dialog  { 
+  width: 470px; 
+  text-align: center;
+}
+ /* css for timed modal */
+.loadersmall {
+    float: left;
+    margin-right: 5px;
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+ /* keyframe for timed modal */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
 
