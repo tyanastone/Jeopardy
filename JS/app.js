@@ -1,3 +1,5 @@
+
+
 // declared score variable equal to zero
 var score = 0;
 
