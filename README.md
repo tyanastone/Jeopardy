@@ -21,7 +21,7 @@
 | Animations |[Animate.css](https://daneden.github.io/animate.css) |
 
 
- 
+ #### <span style="color:#43281C">Commit Count: 50</span>
 
 
 #### <span style="color:hotpink">Wishes & Dreams</span>
