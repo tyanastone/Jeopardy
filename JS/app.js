@@ -3,8 +3,10 @@
 // declared score variable equal to zero
 var score = 0;
 
+
 // created function for question One
 function questionCheckOne() {
+
     // created variable for correct answer
     var correctAnswer = document.getElementById("female")
     // created variable for wrong answer
@@ -72,9 +74,7 @@ function questionCheckOne() {
             document.getElementById("score").style.color = "#ff0000"
         }
         $('.modal-dialog').addClass('animated rubberBand');
-        $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+       
     }
 function questionCheckFour() {
    
@@ -93,9 +93,7 @@ function questionCheckFour() {
             document.getElementById("score").style.color = "#ff0000";   
         }
         $('.modal-dialog').addClass('animated rubberBand');
-        $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+     
 }
 
 function questionCheckFive() {
@@ -115,9 +113,7 @@ var wrongAnswer = document.getElementById("bank")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+    
 }
 
 function questionCheckSix() {
@@ -137,9 +133,7 @@ var wrongAnswer = document.getElementById("kris")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+   
 }
 
 function questionCheckSeven() {
@@ -159,9 +153,7 @@ var wrongAnswer = document.getElementById("les")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+   
 }
 
 function questionCheckEight() {
@@ -181,9 +173,7 @@ var wrongAnswer = document.getElementById("jake")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+   
 }
 
 function questionCheckNine() {
@@ -203,9 +193,7 @@ var wrongAnswer = document.getElementById("six")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+    
 }
 
 function questionCheckTen() {
@@ -225,9 +213,7 @@ var wrongAnswer = document.getElementById("mush")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+    
 }
 
 function questionCheckEleven() {
@@ -247,9 +233,7 @@ var wrongAnswer = document.getElementById("eighty")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+   
 }
 
 function questionCheckTwelve() {
@@ -269,9 +253,7 @@ var wrongAnswer = document.getElementById("clyde")
         document.getElementById("score").style.color = "#ff0000";   
     }
     $('.modal-dialog').addClass('animated rubberBand');
-    $(".disable").on("click", function() {
-        $(this).prop("disabled", true);
-    });
+    
 }
 
 
