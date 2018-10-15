@@ -6,7 +6,8 @@ var score = 0;
 
 // created function for question One
 function questionCheckOne() {
-
+    // added toggle so after you click button it will disappear
+    $('#one').toggle()
     // created variable for correct answer
     var correctAnswer = document.getElementById("female")
     // created variable for wrong answer
@@ -44,7 +45,8 @@ function questionCheckOne() {
 
 
 
-    function questionCheckTwo() {
+function questionCheckTwo() {
+    $('#two').toggle()
         var correctAnswer = document.getElementById("tyana")
         var wrongAnswer = document.getElementById("aiden")
         if (correctAnswer.checked == true) {
@@ -60,7 +62,8 @@ function questionCheckOne() {
         $('.modal-dialog-1').addClass('animated rubberBand');
     }
     
-    function questionCheckThree() {
+function questionCheckThree() {
+    $('#nine').toggle()
         var correctAnswer = document.getElementById("yes")
         var wrongAnswer = document.getElementById("no")
         if (correctAnswer.checked == true) {
@@ -77,7 +80,7 @@ function questionCheckOne() {
        
     }
 function questionCheckFour() {
-   
+    $('#three').toggle()
         var correctAnswer = document.getElementById("harrison")
     var wrongAnswer = document.getElementById("helen")
     
@@ -97,7 +100,7 @@ function questionCheckFour() {
 }
 
 function questionCheckFive() {
-   $('#one').toggle()
+    $('#four').toggle()
     var correctAnswer = document.getElementById("wiig")
 var wrongAnswer = document.getElementById("bank")
 
@@ -117,7 +120,7 @@ var wrongAnswer = document.getElementById("bank")
 }
 
 function questionCheckSix() {
-   
+    $('#ten').toggle()
     var correctAnswer = document.getElementById("katy")
 var wrongAnswer = document.getElementById("kris")
 
@@ -137,7 +140,7 @@ var wrongAnswer = document.getElementById("kris")
 }
 
 function questionCheckSeven() {
-   
+    $('#five').toggle()
     var correctAnswer = document.getElementById("five")
 var wrongAnswer = document.getElementById("les")
 
@@ -157,7 +160,7 @@ var wrongAnswer = document.getElementById("les")
 }
 
 function questionCheckEight() {
-   
+    $('#six').toggle()
     var correctAnswer = document.getElementById("pete")
 var wrongAnswer = document.getElementById("jake")
 
@@ -177,7 +180,7 @@ var wrongAnswer = document.getElementById("jake")
 }
 
 function questionCheckNine() {
-   
+    $('#eleven').toggle()
     var correctAnswer = document.getElementById("eight")
 var wrongAnswer = document.getElementById("six")
 
@@ -197,7 +200,7 @@ var wrongAnswer = document.getElementById("six")
 }
 
 function questionCheckTen() {
-   
+    $('#seven').toggle()
     var correctAnswer = document.getElementById("flag")
 var wrongAnswer = document.getElementById("mush")
 
@@ -217,7 +220,7 @@ var wrongAnswer = document.getElementById("mush")
 }
 
 function questionCheckEleven() {
-   
+    $('#eight').toggle()
     var correctAnswer = document.getElementById("eightyFive")
 var wrongAnswer = document.getElementById("eighty")
 
@@ -237,7 +240,7 @@ var wrongAnswer = document.getElementById("eighty")
 }
 
 function questionCheckTwelve() {
-   
+    $('#twelve').toggle()
     var correctAnswer = document.getElementById("winky")
 var wrongAnswer = document.getElementById("clyde")
 
