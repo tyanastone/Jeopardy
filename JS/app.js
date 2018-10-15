@@ -26,7 +26,7 @@ $('#timedAlert')
 // created function for question One
 function questionCheckOne() {
     // added toggle so after you click button it will disappear
-    $('#one').toggle()
+    $('#one').hide()
     // created variable for correct answer
     var correctAnswer = document.getElementById("female")
     // created variable for wrong answer
@@ -61,7 +61,7 @@ function questionCheckOne() {
 
 
 function questionCheckTwo() {
-    $('#two').toggle()
+    $('#two').hide()
         var correctAnswer = document.getElementById("tyana")
         var wrongAnswer = document.getElementById("aiden")
         if (correctAnswer.checked == true) {
@@ -78,7 +78,7 @@ function questionCheckTwo() {
     }
     
 function questionCheckThree() {
-    $('#nine').toggle()
+    $('#nine').hide()
         var correctAnswer = document.getElementById("yes")
         var wrongAnswer = document.getElementById("no")
         if (correctAnswer.checked == true) {
@@ -95,7 +95,7 @@ function questionCheckThree() {
        
     }
 function questionCheckFour() {
-    $('#three').toggle()
+    $('#three').hide()
         var correctAnswer = document.getElementById("harrison")
     var wrongAnswer = document.getElementById("helen")
     
@@ -115,7 +115,7 @@ function questionCheckFour() {
 }
 
 function questionCheckFive() {
-    $('#four').toggle()
+    $('#four').hide()
     var correctAnswer = document.getElementById("wiig")
 var wrongAnswer = document.getElementById("bank")
 
@@ -135,7 +135,7 @@ var wrongAnswer = document.getElementById("bank")
 }
 
 function questionCheckSix() {
-    $('#ten').toggle()
+    $('#ten').hide()
     var correctAnswer = document.getElementById("katy")
 var wrongAnswer = document.getElementById("kris")
 
@@ -155,7 +155,7 @@ var wrongAnswer = document.getElementById("kris")
 }
 
 function questionCheckSeven() {
-    $('#five').toggle()
+    $('#five').hide()
     var correctAnswer = document.getElementById("five")
 var wrongAnswer = document.getElementById("les")
 
@@ -175,7 +175,7 @@ var wrongAnswer = document.getElementById("les")
 }
 
 function questionCheckEight() {
-    $('#six').toggle()
+    $('#six').hide()
     var correctAnswer = document.getElementById("pete")
 var wrongAnswer = document.getElementById("jake")
 
@@ -195,7 +195,7 @@ var wrongAnswer = document.getElementById("jake")
 }
 
 function questionCheckNine() {
-    $('#eleven').toggle()
+    $('#eleven').hide()
     var correctAnswer = document.getElementById("eight")
 var wrongAnswer = document.getElementById("six")
 
@@ -215,7 +215,7 @@ var wrongAnswer = document.getElementById("six")
 }
 
 function questionCheckTen() {
-    $('#seven').toggle()
+    $('#seven').hide()
     var correctAnswer = document.getElementById("flag")
 var wrongAnswer = document.getElementById("mush")
 
@@ -235,7 +235,7 @@ var wrongAnswer = document.getElementById("mush")
 }
 
 function questionCheckEleven() {
-    $('#eight').toggle()
+    $('#eight').hide()
     var correctAnswer = document.getElementById("eightyFive")
 var wrongAnswer = document.getElementById("eighty")
 
@@ -255,7 +255,7 @@ var wrongAnswer = document.getElementById("eighty")
 }
 
 function questionCheckTwelve() {
-    $('#twelve').toggle()
+    $('#twelve').hide()
     var correctAnswer = document.getElementById("winky")
 var wrongAnswer = document.getElementById("clyde")
 
