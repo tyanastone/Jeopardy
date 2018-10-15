@@ -1,3 +1,4 @@
+
 .header-container {
     display: grid;
     height: 100%;
@@ -6,7 +7,7 @@
     grid-gap: 1px;
     /* border: solid; */
     height: 200px;
-    width: 1600px;
+    width: 100%;
     grid-template-areas: "scoreKeeper scoreKeeper scoreKeeper scoreKeeper" ". . . ." ". . . .";
     /* display: flex;
     align-content: center;
