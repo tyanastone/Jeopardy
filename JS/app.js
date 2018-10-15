@@ -38,7 +38,7 @@ function questionCheckOne() {
     
 }
 
-
+// ***** repeated same steps for all other questions ******
 
 
 
